@@ -2,309 +2,310 @@
 
 import './App.css';
 import React,{useState} from 'react';
+
 export default function App() {
 
   let initialState={
     quote:"Genius is one percent inspiration and ninety-nine percent perspiration.",
-    name:"Thomas Edison"
+    author:"Thomas Edison"
     }
   const [quote, setquote] = useState(initialState);
   let quotes=[
     {
       quote:"Genius is one percent inspiration and ninety-nine percent perspiration.",
-      name:"Thomas Edison"
+      author:"Thomas Edison"
     },
     {
       "quote": "You can observe a lot just by watching.",
-      "name": "Yogi Berra"
+      "author": "Yogi Berra"
     },
     {
       "quote": "A house divided against itself cannot stand.",
-      "name": "Abraham Lincoln"
+      "author": "Abraham Lincoln"
     },
     {
       "quote": "Difficulties increase the nearer we get to the goal.",
-      "name": "Johann Wolfgang von Goethe"
+      "author": "Johann Wolfgang von Goethe"
     },
     {
       "quote": "Fate is in your hands and no one elses",
-      "name": "Byron Pulsifer"
+      "author": "Byron Pulsifer"
     },
     {
       "quote": "Be the chief but never the lord.",
-      "name": "Lao Tzu"
+      "author": "Lao Tzu"
     },
     {
       "quote": "Nothing happens unless first we dream.",
-      "name": "Carl Sandburg"
+      "author": "Carl Sandburg"
     },
     {
       "quote": "Well begun is half done.",
-      "name": "Aristotle"
+      "author": "Aristotle"
     },
     {
       "quote": "Life is a learning experience, only if you learn.",
-      "name": "Yogi Berra"
+      "author": "Yogi Berra"
     },
     {
       "quote": "Self-complacency is fatal to progress.",
-      "name": "Margaret Sangster"
+      "author": "Margaret Sangster"
     },
     {
       "quote": "Peace comes from within. Do not seek it without.",
-      "name": "Buddha"
+      "author": "Buddha"
     },
     {
       "quote": "What you give is what you get.",
-      "name": "Byron Pulsifer"
+      "author": "Byron Pulsifer"
     },
     {
       "quote": "We can only learn to love by loving.",
-      "name": "Iris Murdoch"
+      "author": "Iris Murdoch"
     },
     {
     "quote": "Life is change. Growth is optional. Choose wisely.",
-    "name": "Karen Clark"
+    "author": "Karen Clark"
     },
     {
     "quote": "You'll see it when you believe it.",
-    "name": "Wayne Dyer"
+    "author": "Wayne Dyer"
     },
     {
     "quote": "To lead people walk behind them.",
-    "name": "Lao Tzu"
+    "author": "Lao Tzu"
     },
     {
     "quote": "Having nothing, nothing can he lose.",
-    "name": "William Shakespeare"
+    "author": "William Shakespeare"
     },
     {
     "quote": "Trouble is only opportunity in work clothes.",
-    "name": "Henry J. Kaiser"
+    "author": "Henry J. Kaiser"
     },
     {
     "quote": "A rolling stone gathers no moss.",
-    "name": "Publilius Syrus"
+    "author": "Publilius Syrus"
     },
     {
     "quote": "Ideas are the beginning points of all fortunes.",
-    "name": "Napoleon Hill"
+    "author": "Napoleon Hill"
     },
     {
     "quote": "Everything in life is luck.",
-    "name": "Donald Trump"
+    "author": "Donald Trump"
     },
     {
     "quote": "Doing nothing is better than being busy doing nothing.",
-    "name": "Lao Tzu"
+    "author": "Lao Tzu"
     },
     {
     "quote": "Trust yourself. You know more than you think you do.",
-    "name": "Benjamin Spock"
+    "author": "Benjamin Spock"
     },
     {
     "quote": "Study the past, if you would divine the future.",
-    "name": "Confucius"
+    "author": "Confucius"
     },
     {
     "quote": "Well done is better than well said.",
-    "name": "Benjamin Franklin"
+    "author": "Benjamin Franklin"
     },
     {
     "quote": "Bite off more than you can chew, then chew it.",
-    "name": "Ella Williams"
+    "author": "Ella Williams"
     },
     {
     "quote": "Work out your own salvation. Do not depend on others.",
-    "name": "Buddha"
+    "author": "Buddha"
     },
     {
     "quote": "One today is worth two tomorrows.",
-    "name": "Benjamin Franklin"
+    "author": "Benjamin Franklin"
     },
     {
     "quote": "Once you choose hope, anythings possible.",
-    "name": "Christopher Reeve"
+    "author": "Christopher Reeve"
     },
     {
     "quote": "God always takes the simplest way.",
-    "name": "Albert Einstein"
+    "author": "Albert Einstein"
     },
     {
     "quote": "One fails forward toward success.",
-    "name": "Charles Kettering"
+    "author": "Charles Kettering"
     },
     {
     "quote": "Learning is a treasure that will follow its owner everywhere",
-    "name": "Chinese proverb"
+    "author": "Chinese proverb"
     },
     {
     "quote": "Be as you wish to seem.",
-    "name": "Socrates"
+    "author": "Socrates"
     },
     {
       "quote": "Deep listening is miraculous for both listener and speaker.When someone receives us with open-hearted, non-judging, intensely interested listening, our spirits expand.",
-      "name": "Sue Patton Thoele"
+      "author": "Sue Patton Thoele"
     },
     {
       "quote": "You may be deceived if you trust too much, but you will live in torment if you don't trust enough.",
-      "name": "Frank Crane"
+      "author": "Frank Crane"
     },
     {
       "quote": "Great indeed is the sublimity of the Creative, to which all beings owe their beginning and which permeates all heaven.",
-      "name": "Lao Tzu"
+      "author": "Lao Tzu"
     },
     {
       "quote": "All that is necessary is to accept the impossible, do without the indispensable, and bear the intolerable.",
-      "name": "Kathleen Norris"
+      "author": "Kathleen Norris"
     },
     {
       "quote": "Choose a job you love, and you will never have to work a day in your life.",
-      "name": "Confucius"
+      "author": "Confucius"
     },
     {
       "quote": "You cannot find yourself by going into the past. You can find yourself by coming into the present.",
-      "name": "Eckhart Tolle"
+      "author": "Eckhart Tolle"
     },
     {
       "quote": "All our talents increase in the using, and the every faculty, both good and bad, strengthen by exercise.",
-      "name": "Anne Bronte"
+      "author": "Anne Bronte"
     },
     {
       "quote": "In order to live free and happily you must sacrifice boredom. It is not always an easy sacrifice.",
-      "name": "Richard Bach"
+      "author": "Richard Bach"
     },
     {
       "quote": "The fox has many tricks. The hedgehog has but one. But that is the best of all.",
-      "name": "Desiderius Erasmus"
+      "author": "Desiderius Erasmus"
     },
     {
       "quote": "Of course there is no formula for success except perhaps an unconditional acceptance of life and what it brings.",
-      "name": "Arthur Rubinstein"
+      "author": "Arthur Rubinstein"
     },
     {
       "quote": "Let me tell you the secret that has led me to my goal: my strength lies solely in my tenacity",
-      "name": "Louis Pasteur"
+      "author": "Louis Pasteur"
     },
     {
       "quote": "Something opens our wings. Something makes boredom and hurt disappear. Someone fills the cup in front of us: We taste only sacredness.",
-      "name": "Rumi"
+      "author": "Rumi"
     },
     {
       "quote": "We must never forget that it is through our actions, words, and thoughts that we have a choice.",
-      "name": "Sogyal Rinpoche"
+      "author": "Sogyal Rinpoche"
     },
     {
       "quote": "We see things not as they are, but as we are. Our perception is shaped by our previous experiences.",
-      "name": "Dennis Kimbro"
+      "author": "Dennis Kimbro"
     },
     {
       "quote": "True silence is the rest of the mind; it is to the spirit what sleep is to the body, nourishment and refreshment.",
-      "name": "William Penn"
+      "author": "William Penn"
     },
     {
       "quote": "All our knowledge begins with the senses, proceeds then to the understanding, and ends with reason. There is nothing higher than reason.",
-      "name": "Immanuel Kant"
+      "author": "Immanuel Kant"
     },
     {
       "quote": "The thought manifests as the word. The word manifests as the deed. The deed develops into habit. And the habit hardens into character.",
-      "name": "Buddha"
+      "author": "Buddha"
     },
     {
       "quote": "Patience is a virtue but you will never ever accomplish anything if you don't exercise action over patience.",
-      "name": "Byron Pulsifer"
+      "author": "Byron Pulsifer"
     },
     {
       "quote": "Any of us can achieve virtue, if by virtue we merely mean the avoidance of the vices that do not attract us.",
-      "name": "Robert Lynd"
+      "author": "Robert Lynd"
     },
     {
       "quote": "If the single man plant himself indomitably on his instincts, and there abide, the huge world will come round to him.",
-      "name": "Ralph Emerson"
+      "author": "Ralph Emerson"
     },
     {
       "quote": "Money was never a big motivation for me, except as a way to keep score. The real excitement is playing the game.",
-      "name": "Donald Trump"
+      "author": "Donald Trump"
     },
     {
       "quote": "Friendship with oneself is all important because without it one cannot be friends with anybody else in the world.",
-      "name": "Eleanor Roosevelt"
+      "author": "Eleanor Roosevelt"
     },
     {
       "quote": "Peace is not something you wish for. It's something you make, something you do, something you are, and something you give away.",
-      "name": "Robert Fulghum"
+      "author": "Robert Fulghum"
     },
     {
       "quote": "A wise man can learn more from a foolish question than a fool can learn from a wise answer.",
-      "name": "Bruce Lee"
+      "author": "Bruce Lee"
     },
     {
       "quote": "Every man takes the limits of his own field of vision for the limits of the world.",
-      "name": "Arthur Schopenhauer"
+      "author": "Arthur Schopenhauer"
     },
     {
       "quote": "One does not discover new lands without consenting to lose sight of the shore for a very long time.",
-      "name": "Andre Gide"
+      "author": "Andre Gide"
     },
     {
       "quote": "What is new in the world? Nothing. What is old in the world? Nothing. Everything has always been and will always be.",
-      "name": "Sai Baba"
+      "author": "Sai Baba"
     },
     {
       "quote": "Genuine love should first be directed at oneself if we do not love ourselves, how can we love others?",
-      "name": "Dalai Lama"
+      "author": "Dalai Lama"
     },
     {
       "quote": "Life is like a sewer. What you get out of it depends on what you put into it.",
-      "name": "Tom Lehrer"
+      "author": "Tom Lehrer"
     },
     {
       "quote": "Notice that the stiffest tree is most easily cracked, while the bamboo or willow survives by bending with the wind.",
-      "name": "Bruce Lee"
+      "author": "Bruce Lee"
     },
     {
       "quote": "Learn all you can from the mistakes of others. You won't have time to make them all yourself.",
-      "name": "Alfred Sheinwold"
+      "author": "Alfred Sheinwold"
     },
     {
       "quote": "Judge nothing, you will be happy. Forgive everything, you will be happier. Love everything, you will be happiest.",
-      "name": "Sri Chinmoy"
+      "author": "Sri Chinmoy"
     },
     {
       "quote": "People are so constituted that everybody would rather undertake what they see others do, whether they have an aptitude for it or not.",
-      "name": "Johann Wolfgang von Goethe"
+      "author": "Johann Wolfgang von Goethe"
     },
     {
       "quote": "We are either progressing or retrograding all the while. There is no such thing as remaining stationary in this life.",
-      "name": "James Freeman Clarke"
+      "author": "James Freeman Clarke"
     },
     {
       "quote": "The possession of knowledge does not kill the sense of wonder and mystery. There is always more mystery.",
-      "name": "Anais Nin"
+      "author": "Anais Nin"
     },
     {
       "quote": "Everything that happens happens as it should, and if you observe carefully, you will find this to be so.",
-      "name": "Marcus Aurelius"
+      "author": "Marcus Aurelius"
     },
     {
       "quote": "What we think determines what happens to us, so if we want to change our lives, we need to stretch our minds.",
-      "name": "Wayne Dyer"
+      "author": "Wayne Dyer"
     },
     {
       "quote": "In a controversy the instant we feel anger we have already ceased striving for the truth, and have begun striving for ourselves.",
-      "name": "Buddha"
+      "author": "Buddha"
     },
     {
       "quote": "It is the greatest of all mistakes to do nothing because you can only do little do what you can.",
-      "name": "Sydney Smith"
+      "author": "Sydney Smith"
     },
     {
       "quote": "When you see a man of worth, think of how you may emulate him. When you see one who is unworthy, examine yourself.",
-      "name": "Confucius"
+      "author": "Confucius"
     },
     {
       "quote": "Sometimes the cards we are dealt are not always fair. However you must keep smiling and moving on.",
-      "name": "Tom Jackson"
+      "author": "Tom Jackson"
     }
   ]
   let generateQuote=()=>{
@@ -321,7 +322,7 @@ export default function App() {
         <h2 id="text">{quote.quote}</h2>
         <br />
         <div>
-        <h3 id="author">{quote.name}</h3>
+        <h3 id="author">{quote.author}</h3>
         </div>
         <div>
         <button id="twitter">
