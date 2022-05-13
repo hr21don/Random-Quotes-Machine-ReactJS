@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Random-Quotes-Machine-ReactJS
 Create react app by the following command
 ``` 
 npx create-react-app random-quote-machine
@@ -64,7 +64,7 @@ code {
 
 ## App Component 
 
-Get rid of everything inside your project and it should look like this.
+Get rid of unused imports inside your App.JS file and it should look like this.
 
 ```
 import './App.css';
@@ -82,7 +82,7 @@ return (
 export default App;
 ```
 
-For this project we will import useState from react alongside creating an array of objects to store the 'quote' and 'author' field from the [Type.Fit/API](https://type.fit/api/quotes). Then we will build a function to generate a quote at random so that we have access to them. Note that we have three buttons. One for generating a quote and two for sharing the quote on Twitter and Tumblr. 
+For this project we'll import useState from react to define the initialState of the app and then create an array of objects to store the data from the [Type.Fit/API](https://type.fit/api/quotes). Then we'll build a function to generate a quote at random so that we have access to them. Note that we have three buttons. One for generating a quote and two for sharing the quote on Twitter and Tumblr. 
 
 ```
 //Quotes Credit: https://type.fit/api/quotes
@@ -182,7 +182,7 @@ App.css will contain our styling code for our Random Quote Machine.
   width: 100vw;
   height: 100vh;
   color: rgb(41, 41, 41);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
   background: black;
   overflow: hidden;
 }
