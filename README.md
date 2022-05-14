@@ -64,7 +64,7 @@ code {
 
 ## App Component 
 
-Get rid of unused imports inside your App.JS file and it should look like this.
+Get rid of everything inside of the 'div' along with any unused imports and it should look like this.
 
 ```
 import './App.css';
